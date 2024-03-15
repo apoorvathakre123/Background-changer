@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #white{
+         background-color:wheat ;
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+          background-color: black;  
+        }
+        #color_switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color_switcher">
+        <span class="btn" id="orange" onclick="changeBG('#FFA500')"></span>
+        <span class="btn" id="white" onclick="changeBG('#F5DEB3')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="_fhdlove60.jpg" alt="">
+<p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem suscipit reiciendis minus quia cum laborum quae pariatur in velit sint unde, inventore vitae voluptates eaque vel consequuntur provident aspernatur.
+    Atque iure facere itaque error, similique totam debitis explicabo exercitationem vero accusantium, saepe et alias illum nostrum impedit laborum dicta molestiae. Corrupti placeat suscipit cupiditate nemo veritatis tenetur. Dolores, incidunt.
+    Hic odit tempora facere, est exercitationem odio aperiam, laborum sit velit doloremque dolorem sequi quasi similique magnam ab adipisci fuga architecto molestiae ut id consectetur autem nihil amet! Natus, repellat.
+    Consequuntur corrupti repudiandae non nulla doloremque expedita recusandae inventore incidunt officia iusto cumque dolorem minima distinctio nisi, pariatur dolore! Quam perspiciatis assumenda ut aut ipsam voluptates porro aspernatur corporis nulla?
+    Illum dolor, ipsa dolorum suscipit voluptatem veritatis deleniti obcaecati, omnis voluptatum non iste impedit vel modi vero rerum, enim ullam dolore molestias quos quasi ducimus officia sint nostrum similique. Dolores.
+    Totam cupiditate rem molestiae perspiciatis, magni asperiores necessitatibus hic corporis harum ratione, rerum, magnam accusamus nisi quidem porro nam sint fugiat! Illum cumque eos non perferendis itaque quidem inventore voluptatibus.
+    Aperiam molestiae facere rem, ullam sit ad temporibus quaerat. Perferendis repudiandae dolorum quis ex. Tempore nihil architecto sint ut fuga reprehenderit aspernatur ullam perferendis consequatur, aliquid iste magnam, accusantium exercitationem?
+    Dolor, corrupti? Consectetur laudantium deleniti accusamus quae exercitationem ratione, ut accusantium harum in natus, error quia numquam cumque officiis id? Autem harum, eaque delectus molestiae similique cupiditate et sunt sed.
+    Quidem ad asperiores ab explicabo esse ducimus voluptas provident alias, error cupiditate! Architecto quas molestias tempora dicta magnam. Hic mollitia cum nam rem porro fugit cumque accusamus deserunt exercitationem ex.
+    Voluptas, repudiandae! Dolore libero expedita laborum voluptates placeat? Accusantium facilis, similique, aperiam voluptatibus dolores perferendis ut reiciendis at veniam ea nisi quas corporis explicabo iusto aspernatur quisquam. Voluptate, omnis nesciunt.
+    Eaque at, distinctio alias in laboriosam pariatur enim laborum cupiditate autem doloribus voluptas impedit rerum nobis nesciunt, perspiciatis facilis? Reprehenderit assumenda esse possimus sint eos placeat amet ut nemo maxime.
+</p>
+<script>
+    function changeBG(color){
+        document.body.style.backgroundColor = color;
+        let txt= document.getElementsByClassName("text");
+        if(color == "#000000"){
+            for(let elm of txt){
+                elm.style.color = "white";
+            }
+        }else{
+                for(let elm of txt){
+                elm.style.color = "black";
+            }
+
+       
+    }
+}
+</script>
+</body>
+</html>
